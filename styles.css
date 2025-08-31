@@ -1,0 +1,238 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(133deg, #6e8efb, #54c4c4, #dfda9f, #a777e3);
+    background-size: 400% 400%;
+    animation: gradient 60s ease infinite;
+}
+
+/* Entête */
+.entete {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
+    margin-top: 50px;
+}
+
+.entete h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.entete img {
+    border-radius: 50%;
+    border: 3px solid #333;
+    margin: 10px 0;
+    transition: transform 0.3s ease;
+    cursor: grabbing;
+}
+
+.entete img:hover {
+    transform: scale(1.1);
+}
+
+.entete h2 {
+    color: #666;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* Sous-entête */
+
+.sous_entete {
+    text-align: center;
+    padding: 15px;
+    background-color: #e9e9e9;
+    border-radius: 8px;
+    margin: 10px auto;
+    max-width: 600px;
+    font-size: 18px;
+    color: #444;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sous_entete p {
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Site IMPORTANT lol */
+.SiteImportant {
+    text-align: center;
+    padding: 15px;
+    background-color: #ffeb3b;
+    /* Jaune pour attirer l'attention */
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.SiteImportant a {
+    color: #d32f2f;
+    /* Rouge pour indiquer l'importance */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.SiteImportant a:hover {
+    text-decoration: underline;
+    color: #b71c1c;
+    /* Rouge plus foncé au survol */
+}
+
+/* Réseaux Principaux */
+.princip_net {
+    text-align: center;
+    padding: 20px;
+    background-color: #e3f2fd;
+    /* Couleur de fond douce */
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 300px;
+}
+
+.princip_net h3 {
+    color: #1976d2;
+    /* Bleu pour le titre */
+    margin-bottom: 15px;
+}
+
+.princip_net a {
+    color: #1976d2;
+    /* Couleur des icônes */
+    font-size: 24px;
+    /* Taille des icônes */
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.princip_net a:hover {
+    transform: scale(1.2);
+    /* Agrandit légèrement l'icône au survol */
+    color: #0d47a1;
+    /* Couleur plus foncée au survol */
+}
+
+/* Réseaux Secondaires */
+.second_net {
+    text-align: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+    /* Couleur de fond douce */
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 400px;
+}
+
+.second_net h3 {
+    color: #757575;
+    /* Couleur du titre */
+    margin-bottom: 15px;
+}
+
+.second_net a {
+    color: #757575;
+    /* Couleur des liens */
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px 5px;
+    font-size: 16px;
+}
+
+.second_net a i {
+    margin-right: 3px;
+    margin-left: 5px;
+    color: #757575;
+    /* Couleur des icônes */
+}
+
+.second_net a:hover {
+    color: #333;
+    /* Couleur plus foncée au survol */
+}
+
+.second_net a:hover i {
+    color: #333;
+    /* Couleur des icônes au survol */
+}
+
+/* Pied de page */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Fond blanc avec transparence */
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-top: 1px solid #e9ecef;
+    margin-bottom: 20px;
+}
+
+footer p {
+    margin: 0;
+    color: #333;
+    font-size: 16px;
+}
+
+#visitorCount {
+    font-weight: bold;
+    color: #007BFF;
+}
+
+footer a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Autres Styles */
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Ajuster les styles pour les appareils mobiles */
+@media only screen and (max-width: 768px) {
+    body {
+        height: auto;
+        padding: 10px;
+    }
+
+    .entete img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .princip_net a,
+    .second_net a {
+        font-size: 20px;
+    }
+
+    .second_net a {
+        display: block;
+    }
+}
